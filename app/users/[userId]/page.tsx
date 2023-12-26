@@ -6,7 +6,7 @@ import React from 'react'
 async function User({ params }: { params: Params }) {
   const user = await getUser(params.userId)
   return (
-    <div>
+    <div className='text-2xl'>
       <h1>{user.name}</h1>
     </div>
   )
